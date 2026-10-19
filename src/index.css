@@ -1,0 +1,105 @@
+/* Claude Design System - Core Tokens & Typography */
+:root {
+  /* Claude Warm Light Theme */
+  --claude-bg: #FAF9F5;
+  --claude-bg-gradient: radial-gradient(circle at 50% 0%, #FFFDF9 0%, #FAF9F5 60%, #F3F1EB 100%);
+  --claude-surface: #FFFFFF;
+  --claude-surface-secondary: #F6F5EE;
+  --claude-surface-elevated: #FFFFFF;
+  --claude-border: #E8E5DC;
+  --claude-border-subtle: #EFECE4;
+  --claude-border-focus: #D97757;
+  
+  /* Text */
+  --claude-text: #1F1E1D;
+  --claude-text-secondary: #686660;
+  --claude-text-muted: #95938B;
+  
+  /* Claude Iconic Terracotta Accents */
+  --claude-terracotta: #D97757;
+  --claude-terracotta-hover: #C86646;
+  --claude-terracotta-active: #B3583A;
+  --claude-terracotta-subtle: rgba(217, 119, 87, 0.09);
+  --claude-terracotta-border: rgba(217, 119, 87, 0.28);
+  --claude-terracotta-glow: rgba(217, 119, 87, 0.22);
+  
+  /* Accent Warm Sage / Green for goal completion */
+  --claude-success: #4D7C5F;
+  --claude-success-subtle: rgba(77, 124, 95, 0.12);
+  
+  /* Shadows */
+  --claude-shadow-sm: 0 1px 3px rgba(31, 30, 29, 0.04), 0 1px 2px rgba(31, 30, 29, 0.02);
+  --claude-shadow-md: 0 8px 24px -4px rgba(31, 30, 29, 0.06), 0 2px 6px -1px rgba(31, 30, 29, 0.04);
+  --claude-shadow-lg: 0 20px 40px -8px rgba(31, 30, 29, 0.09), 0 4px 12px -2px rgba(31, 30, 29, 0.05);
+  --claude-shadow-inner: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+
+  /* Fonts */
+  --font-serif: 'Instrument Serif', 'Newsreader', Georgia, 'Times New Roman', serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+}
+
+[data-theme='dark'] {
+  /* Claude Warm Espresso Dark Theme */
+  --claude-bg: #141413;
+  --claude-bg-gradient: radial-gradient(circle at 50% 0%, #1E1E1C 0%, #141413 70%, #0E0E0D 100%);
+  --claude-surface: #1E1E1D;
+  --claude-surface-secondary: #252523;
+  --claude-surface-elevated: #282826;
+  --claude-border: #333230;
+  --claude-border-subtle: #292826;
+  --claude-border-focus: #E07F60;
+  
+  /* Text */
+  --claude-text: #F6F5F0;
+  --claude-text-secondary: #AAA89E;
+  --claude-text-muted: #76746C;
+  
+  /* Terracotta dark variant */
+  --claude-terracotta: #E07F60;
+  --claude-terracotta-hover: #EC8D6F;
+  --claude-terracotta-active: #D47253;
+  --claude-terracotta-subtle: rgba(224, 127, 96, 0.14);
+  --claude-terracotta-border: rgba(224, 127, 96, 0.35);
+  --claude-terracotta-glow: rgba(224, 127, 96, 0.28);
+  
+  --claude-success: #6CA580;
+  --claude-success-subtle: rgba(108, 165, 128, 0.16);
+
+  --claude-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --claude-shadow-md: 0 8px 28px -4px rgba(0, 0, 0, 0.45);
+  --claude-shadow-lg: 0 24px 50px -10px rgba(0, 0, 0, 0.65);
+  --claude-shadow-inner: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-height: 100%;
+  font-family: var(--font-body);
+  background: var(--claude-bg);
+  color: var(--claude-text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font-family: inherit;
+}
+
+input, select, textarea {
+  font-family: inherit;
+}
